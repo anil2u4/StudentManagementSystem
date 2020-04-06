@@ -16,6 +16,7 @@ namespace StudentManagementSystem.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            // Hai
         }
 
         public IActionResult Index()
