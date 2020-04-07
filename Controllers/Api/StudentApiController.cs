@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using StudentManagementSystem.IRepository;
+using StudentManagementSystem.Models;
 
 namespace StudentManagementSystem.Controllers
 {
@@ -11,6 +14,13 @@ namespace StudentManagementSystem.Controllers
     [ApiController]
     public class StudentApiController : ControllerBase
     {
+
+        private readonly IStudentRepository _studentRepository;
+        public StudentApiController(IStudentRepository _studentRepository)
+        {
+            this._studentRepository = _studentRepository;
+        }
+
         public Task<string> Get()
         {
             return this.GetStudent();
@@ -53,5 +63,5 @@ namespace StudentManagementSystem.Controllers
         }
     }
 
-    }
+ 
 }

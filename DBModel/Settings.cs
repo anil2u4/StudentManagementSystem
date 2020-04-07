@@ -8,7 +8,7 @@ namespace StudentManagementSystem.DBModel
 {
     public class Settings
     {
-        public string ConfigurationString;
+        public string ConnectionString;
         public string Database;
         public IConfigurationRoot iConfigurationRoot;
     }

@@ -28,7 +28,8 @@ namespace StudentManagementSystem
         {
             //services.AddControllersWithViews();
             services.AddMvc();
-            services.Configure<Settings>(o=> { o.iConfigurationRoot = Configuration; });
+            services.Configure<Settings>(o => { o.iConfigurationRoot = (IConfigurationRoot)Configuration; });
+
             services.AddTransient<IStudentRepository, StudentRepository>();
         }
 

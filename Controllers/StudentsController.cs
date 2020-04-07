@@ -10,9 +10,8 @@ using System.Threading.Tasks;
 
 namespace StudentManagementSystem.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class StudentsController:ControllerBase
+
+    public class StudentsController:Controller
     {
         
         private readonly IStudentRepository _studentRepository;
