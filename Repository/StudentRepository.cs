@@ -43,7 +43,7 @@ namespace StudentManagementSystem.Repository
 
         public async Task<DeleteResult> RemoveAll()
         {
-            return await _context.Students.DeleteManyAsync(new BsonDocument);
+            return await _context.Students.DeleteManyAsync(new BsonDocument());
         }
 
         public async Task<string> Update(string id, Student student)
