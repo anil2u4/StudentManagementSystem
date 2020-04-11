@@ -32,7 +32,10 @@ namespace StudentManagementSystem.Controllers
         }
 
 
-
+        public IActionResult Login()
+        {
+            return View();
+        }
 
 
 
