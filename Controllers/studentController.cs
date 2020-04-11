@@ -36,6 +36,10 @@ namespace StudentManagementSystem.Controllers
         {
             return View();
         }
+        public IActionResult Login1()
+        {
+            return View();
+        }
 
 
 
